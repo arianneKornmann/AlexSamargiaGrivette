@@ -1,0 +1,1616 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.charm-bold {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.body {
+    padding-bottom: 5%;
+
+}
+
+.name h1{
+    font-family: "Charm", cursive;
+    color: #E796D5;
+    padding-left: 4%;
+    padding-top: 0.75%;
+    font-size: 1.8vw;
+}
+
+.header {
+    width: 100%;
+    height: 4.5vw;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px gray;
+}
+
+.nav{
+    margin-top: -2.5%;
+    padding-right: 10%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+    margin-right: 3%;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #E796D5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25vw;
+    padding: 16px 18px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #E796D5;
+    color: white;
+    border-radius: 10px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main p {
+    text-align: center;
+    padding-top: 4%;
+    font-size: 300%;
+    padding-bottom: 4%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .buttons {
+    text-align: center;
+}
+
+.main .buttons button{
+    margin-bottom: 2%;
+    padding: 0.5%;
+    background-color: #E796D5;
+    color: white;
+    font-size: 100%;
+    border-color: #E796D5;
+    border-style: outset;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .buttons button:hover {
+    background-color: white;
+    color: #E796D5;
+    border-color: #E796D5;
+    border-style: inset;
+}
+
+.main .images {
+    text-align: center;
+}
+
+.main .images img {
+    padding-bottom: 2%;
+    height: 60%;
+    width: 50%;
+}
+
+.body .main .headshot img{
+    float: left;
+    height: 30%;
+    width: 20%;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.body .main .aboutme {
+    float: right;
+    padding-left: 40%;
+    padding-right: 8%;
+    margin-top: -20%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    text-indent: 40px;
+}
+
+.body .main .titles {
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 175%;
+}
+
+.body .main .hello {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 60%;
+    position: absolute;
+    margin-top: 8%;
+    font-size: 175%;
+}
+
+.footer {
+    width: 100%;
+    height: 5vw;
+    background-color: #E796D5;
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin-top: 2.5%;
+    font-size: .75vw;
+}
+
+.form-container {
+    margin-top: 5%;
+    box-shadow: 0 0 15px -2px gray;
+    text-align: center;
+    width: 40%;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    border-radius: 7%;
+}
+
+.form-container p {
+    padding-bottom: 3%;
+    padding-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+}
+
+.form-container .form input {
+    padding: 2%;
+    margin-bottom: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+.form-container .form textarea {
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+.form-container .form button {
+    padding: 2% 3%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1%;
+    font-size: 120%;
+    background-color: #E796D5;
+    color: white;
+    border: none;
+}
+
+.form-container .form button:hover {
+    background-color: lightgray;
+    color: #E796D5;
+}
+
+.contactinfo {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contactinfo .emailphone {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+}
+
+.contactinfo p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+.body .main .resume {
+    padding-top: 3%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 349px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -6%;
+        padding-right: 0.5%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.75%;
+        font-size: 2.75vw;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.5vw;
+        padding: 4px 6px;
+    }
+
+    li {
+        float: right;
+        margin-right: 0.2%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        text-align: center;
+        padding-bottom: 5%;
+        text-indent: 0px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 115%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .main p {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 125%;
+        padding-bottom: 4%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .form-container p {
+        padding-bottom: 3%;
+        padding-top: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 125%;
+    }
+
+    .form-container .form input {
+        padding: 2%;
+        margin-bottom: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 80%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        width: 80%;
+    }
+
+    .contactinfo .emailphone {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+    
+    .contactinfo p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 80%;
+    }
+
+    .form-container .form button {
+        padding: 2% 3%;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 1%;
+        font-size: 100%;
+        background-color: #E796D5;
+        color: white;
+        border: none;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.25vw;
+    }
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 434px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -5.5%;
+        padding-right: 0.5%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.75%;
+        font-size: 2.75vw;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.5vw;
+        padding: 6px 8px;
+    }
+
+    li {
+        float: right;
+        margin-right: 0.2%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        text-align: center;
+        padding-bottom: 5%;
+        text-indent: 0px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 115%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .main p {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 150%;
+        padding-bottom: 4%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .form-container p {
+        padding-bottom: 3%;
+        padding-top: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 175%;
+    }
+
+    .form-container .form input {
+        padding: 2%;
+        margin-bottom: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+
+    .contactinfo .emailphone {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 125%;
+    }
+    
+    .contactinfo p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+
+    .form-container .form button {
+        padding: 2% 3%;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 1%;
+        font-size: 100%;
+        background-color: #E796D5;
+        color: white;
+        border: none;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.25vw;
+    }
+
+}
+
+@media only screen and (min-width: 435px) and (max-width: 519px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -5%;
+        padding-right: 0.5%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.75%;
+        font-size: 2.75vw;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.5vw;
+        padding: 8px 10px;
+    }
+
+    li {
+        float: right;
+        margin-right: 0.5%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 115%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 115%;
+    }
+
+    .main p {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 150%;
+        padding-bottom: 4%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .form-container p {
+        padding-bottom: 3%;
+        padding-top: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 175%;
+    }
+
+    .form-container .form input {
+        padding: 2%;
+        margin-bottom: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+
+    .contactinfo .emailphone {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 125%;
+    }
+    
+    .contactinfo p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+    }
+    
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.25vw;
+    }
+
+}
+
+@media only screen and (min-width: 520px) and (max-width: 599px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -5.25%;
+        padding-right: 1%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.5%;
+        font-size: 2.75vw;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.5vw;
+        padding: 10px 12px;
+    }
+
+    li {
+        float: right;
+        margin-right: 1%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 110%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 125%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 125%;
+    }
+
+    .main p {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 200%;
+        padding-bottom: 4%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 599px) and (max-width: 659px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -5%;
+        padding-right: 1%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.75%;
+        font-size: 2.75vw;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.5vw;
+        padding: 10px 12px;
+    }
+
+    li {
+        float: right;
+        margin-right: 1.5%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 175%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .contactinfo {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5%;
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .main p {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 200%;
+        padding-bottom: 4%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.25vw;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 699px) {
+
+    .header {
+        width: 100%;
+        height: 12vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -5%;
+        padding-right: 1%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 4.5%;
+        font-size: 120%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 100%;
+        padding: 10px 12px;
+    }
+
+    li {
+        float: right;
+        margin-right: 1.5%;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 175%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.25vw;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 734px) {
+
+    .header {
+        width: 100%;
+        height: 10vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .nav{
+        margin-top: -4.50%;
+        padding-right: 2%;
+    }
+   
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3.5%;
+        font-size: 115%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 100%;
+        padding: 10px 12px;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 175%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 735px) and (max-width: 768px){
+
+    .header {
+        width: 100%;
+        height: 9vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 3%;
+        font-size: 130%;
+    }
+
+    .nav{
+        margin-top: -4.5%;
+        padding-right: 2%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 100%;
+        padding: 10px 12px;
+    }
+
+    .body .main .headshot img{
+        height: 70%;
+        width: 50%;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+    
+    .body .main .aboutme {
+        padding-top: 35%;
+        margin-left: -30%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 175%;
+        margin-top: 85%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .footer p {
+        margin-top: 2.5%;
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+    .header {
+        width: 100%;
+        height: 8vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 2.5%;
+        font-size: 2.5vw;
+    }
+
+    .nav{
+        margin-top: -4%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 10px 12px;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        border-radius: 7%;
+    }
+
+    .form-container .form textarea {
+        resize: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        width: 80%;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 40%;
+        width: 30%;
+        padding-left: 2%;
+        padding-top: 10%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 35%;
+        padding-right: 3%;
+        margin-top: -32%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 58%;
+        position: absolute;
+        margin-top: 12%;
+        font-size: 150%;
+    }
+
+    .body .main .resume img{
+        padding-top: 3%;
+        text-align: center;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1225px){
+
+    .header {
+        width: 100%;
+        height: 7vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 1.5%;
+        font-size: 2.5vw;
+    }
+
+    .nav{
+        margin-top: -4%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 10px 12px;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        border-radius: 7%;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 35%;
+        width: 25%;
+        padding-left: 2%;
+        padding-top: 5%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 30%;
+        padding-right: 5%;
+        margin-top: -25%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 130%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 53%;
+        position: absolute;
+        margin-top: 8%;
+        font-size: 175%;
+    }
+    
+}
+
+@media only screen and (min-width: 1226px) and (max-width: 1370px){
+
+    .header {
+        width: 100%;
+        height: 11vh;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 2%;
+        font-size: 2.5vw;
+    }
+
+    .nav{
+        margin-top: -3.5%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 10px 12px;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 30%;
+        width: 20%;
+        padding-left: 3%;
+        padding-top: 5%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 28%;
+        padding-right: 5%;
+        margin-top: -20%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 53%;
+        position: absolute;
+        margin-top: 8%;
+        font-size: 175%;
+    }
+
+    .body .main .titles {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 5%;
+        text-align: center;
+        font-size: 175%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        border-radius: 7%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1371px) and (max-width: 1400px){
+
+    .header {
+        width: 100%;
+        height: 8vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 2%;
+        font-size: 2.5vw;
+    }
+
+    .nav{
+        margin-top: -4%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 10px 12px;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        border-radius: 7%;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 30%;
+        width: 20%;
+        padding-left: 3%;
+        padding-top: 5%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 28%;
+        padding-right: 5%;
+        margin-top: -20%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 53%;
+        position: absolute;
+        margin-top: 8%;
+        font-size: 175%;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1500px){
+
+    .header {
+        width: 100%;
+        height: 8vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 2%;
+        font-size: 2.5vw;
+    }
+
+    .nav{
+        margin-top: -4%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 10px 12px;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        border-radius: 7%;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 30%;
+        width: 20%;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 30%;
+        padding-right: 5%;
+        margin-top: -20%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 55%;
+        position: absolute;
+        margin-top: 8%;
+        font-size: 175%;
+    }
+    
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1750px){
+
+    .header {
+        width: 100%;
+        height: 6vw;
+        background-color: white;
+        box-shadow: 0 8px 6px -6px gray;
+    }
+
+    .header .name h1 {
+        font-family: "Charm", cursive;
+        color: #E796D5;
+        padding-left: 4%;
+        padding-top: 1.5%;
+        font-size: 2.25vw;
+    }
+
+    .nav{
+        margin-top: -3%;
+        padding-right: 5%;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: #E796D5;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.75vw;
+        padding: 10px 12px;
+    }
+
+    .body .main .headshot img{
+        float: left;
+        height: 30%;
+        width: 20%;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .body .main .aboutme {
+        float: right;
+        padding-left: 35%;
+        padding-right: 5%;
+        margin-top: -20%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        text-indent: 40px;
+    }
+
+    .body .main .hello {
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 60%;
+        position: absolute;
+        margin-top: 8%;
+        font-size: 175%;
+    }
+
+    .form-container {
+        margin-top: 5%;
+        box-shadow: 0 0 15px -2px gray;
+        text-align: center;
+        width: 50%;
+        padding-bottom: 2%;
+        margin-left: 25%;
+        border-radius: 7%;
+    }
+    
+}
